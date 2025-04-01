@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Lanches - Pão & Fumaça</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="javascript.js">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="logo-container">
+            <h1 class="logo">Pão & Fumaça</h1>
+            <img src="img/logo for Pão & Fumaça hamburger restaurant.png" alt="Logo Pão & Fumaça" class="logo-img">
+        </div>
+        <nav class="navbar">
+            <a href="#cardapio">Cardápio</a>
+            <a href="index-bebidas.html">Bebidas</a>
+            <a href="index-sobre.html">Sobre</a>
+            <button id="carrinho-btn" class="btn-carrinho">Carrinho 🛒 (<span id="carrinho-quantidade">0</span>)</button>
+        </nav>
+        </nav>
+    </header>
+
+    <!-- Seção Seleção de entradas -->
+
+        <section id="cardapio">
+            <!-- Barra estilizada centralizada com o texto -->
+            <div class="titulo-barra">
+                <span>Seleção de Entradas</span>
+            </div>
+            <!-- Modal do Carrinho -->
+<div id="carrinho-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Itens no Carrinho</h2>
+        <ul id="carrinho-itens">
+            <!-- Itens do carrinho serão adicionados aqui dinamicamente -->
+        </ul>
+        <p id="total-carrinho"><strong>Total:</strong> R$ 0,00</p>
+        <button id="finalizar-compra" class="btn-finalizar">Finalizar Compra</button>
+    </div>
+</div>
+
+            <!-- Item 1 -->
+            <div class="item-consumiveis">
+                <img src="img.entradas/batata-frita-sequinha.avif" alt="Fritas">
+                <div class="info">
+                    <h3>Fritas</h3>
+                    <p>Fritas 450g, sequinha sem gordura e saborosa.</p>
+                    <p><strong>Preço:</strong> R$ 19,00</p>
+                    <button class="btn-comprar" data-nome="Fritas" data-preco="19.00">Comprar</button>
+                </div>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="item-consumiveis">
+                <img src="img.entradas/mandioca.frita.php" alt="Mandioca Frita">
+                <div class="info">
+                    <h3>Mandioca Frita</h3>
+                    <p>Mandioca Frita 560g, Mandioca da casa frita, seuqinha e saborosa.</p>
+                    <p><strong>Preço:</strong> R$ 15,00</p>
+                    <button class="btn-comprar" data-nome="Mandioca Frita" data-preco="15.00">Comprar</button>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="item-consumiveis">
+                <img src="img.entradas/bolinho-de-carne-moida-facil.jpg.webp" alt="Bolinho de Carne">
+                <div class="info">
+                    <h3>Bolinho de Carne</h3>
+                    <p>Bolinho de Carne 500g, bolinho assado com carne de primeira.</p>
+                    <p><strong>Preço:</strong> R$ 20,00</p>
+                    <button class="btn-comprar" data-nome="Bolinho de Carne" data-preco="20.00">Comprar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Seção Seleção de Lanches -->
+    <main>
+        <section id="cardapio">
+            <!-- Barra estilizada centralizada com o texto -->
+            <div class="titulo-barra">
+                <span>Seleção de Lanches</span>
+            </div>
+            <!-- Modal do Carrinho -->
+<div id="carrinho-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Itens no Carrinho</h2>
+        <ul id="carrinho-itens">
+            <!-- Itens do carrinho serão adicionados aqui dinamicamente -->
+        </ul>
+        <p id="total-carrinho"><strong>Total:</strong> R$ 0,00</p>
+        <button id="finalizar-compra" class="btn-finalizar">Finalizar Compra</button>
+    </div>
+</div>
+
+            <!-- Item 1 -->
+            <div class="item-lanche">
+                <img src="img/3.jfif" alt="Cheddar Bacon Deluxe">
+                <div class="info">
+                    <h3>Cheddar Bacon Deluxe</h3>
+                    <p>Hambúrguer Angus 180g, queijo cheddar, bacon e molho especial.</p>
+                    <p><strong>Preço:</strong> R$ 28,00</p>
+                    <button class="btn-comprar" data-nome="Cheddar Bacon Deluxe" data-preco="28.00">Comprar</button>
+                </div>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="item-lanche">
+                <img src="img/download.jfif" alt="Burger Caipira">
+                <div class="info">
+                    <h3>Burger Caipira</h3>
+                    <p>Hambúrguer Angus 180g, queijo minas, ovo, alface e tomate.</p>
+                    <p><strong>Preço:</strong> R$ 26,00</p>
+                    <button class="btn-comprar" data-nome="Burger Caipira" data-preco="26.00">Comprar</button>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="item-lanche">
+                <img src="img/download2.jfif" alt="Picanha na Brasa">
+                <div class="info">
+                    <h3>Picanha na Brasa</h3>
+                    <p>Hambúrguer de picanha, queijo prato, cebola caramelizada e barbecue.</p>
+                    <p><strong>Preço:</strong> R$ 35,00</p>
+                    <button class="btn-comprar" data-nome="Picanha na Brasa" data-preco="35.00">Comprar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>© 2025 Pão & Fumaça</p>
+        <p>Email: contato@paoefumaca.com.br | Telefone: (43) 9999-9999</p>
+        <p>Sobre Nós: Paixão pela grelha e sabores defumados. Experiência rústica e acolhedora.</p>
+    </footer>
+</body>
+</html>
+
+<script>
+    const carrinho = [];
+    const carrinhoQuantidade = document.getElementById('carrinho-quantidade');
+
+    // Função para adicionar itens ao carrinho
+    function adicionarAoCarrinho(nome, preco) {
+        carrinho.push({ nome, preco });
+        atualizarCarrinho();
+    }
+
+    // Atualizar a quantidade de itens no carrinho
+    function atualizarCarrinho() {
+        carrinhoQuantidade.textContent = carrinho.length;
+    }
+
+    // Adicionar evento aos botões de compra
+    const botoesComprar = document.querySelectorAll('.btn-comprar');
+    botoesComprar.forEach(botao => {
+        botao.addEventListener('click', () => {
+            const nome = botao.getAttribute('data-nome');
+            const preco = botao.getAttribute('data-preco');
+            adicionarAoCarrinho(nome, preco);
+        });
+    });
+</script>
+
+
+<script>
+    const carrinhoModal = document.getElementById('carrinho-modal');
+    const carrinhoBtn = document.getElementById('carrinho-btn');
+    const closeBtn = document.querySelector('.close-btn');
+    const carrinhoItens = document.getElementById('carrinho-itens');
+    const totalCarrinho = document.getElementById('total-carrinho');
+
+    // Mostrar o modal do carrinho
+    carrinhoBtn.addEventListener('click', () => {
+        atualizarModal();
+        carrinhoModal.style.display = 'flex';
+    });
+
+    // Fechar o modal
+    closeBtn.addEventListener('click', () => {
+        carrinhoModal.style.display = 'none';
+    });
+
+    // Fechar o modal ao clicar fora do conteúdo
+    window.addEventListener('click', (event) => {
+        if (event.target === carrinhoModal) {
+            carrinhoModal.style.display = 'none';
+        }
+    });
+
+    // Atualizar o modal com os itens do carrinho
+    function atualizarModal() {
+        carrinhoItens.innerHTML = ''; // Limpar lista de itens
+        let total = 0;
+
+        carrinho.forEach(item => {
+            const li = document.createElement('li');
+            li.innerHTML = `${item.nome} - R$ ${parseFloat(item.preco).toFixed(2)}`;
+            carrinhoItens.appendChild(li);
+            total += parseFloat(item.preco);
+        });
+
+        totalCarrinho.innerHTML = `<strong>Total:</strong> R$ ${total.toFixed(2)}`;
+    }
+</script>
+
+<script>
+    const finalizarCompraBtn = document.getElementById('finalizar-compra');
+
+    // Função para finalizar a compra
+    finalizarCompraBtn.addEventListener('click', () => {
+        if (carrinho.length === 0) {
+            alert("O carrinho está vazio. Adicione itens antes de finalizar a compra!");
+            return;
+        }
+
+        // Exibe a mensagem de confirmação
+        alert("Compra realizada com sucesso! Obrigado por escolher a Pão & Fumaça. 🍔✨");
+
+        // Limpa o carrinho
+        carrinho.length = 0; // Esvazia o array
+        atualizarCarrinho(); // Atualiza o indicador no cabeçalho
+        carrinhoItens.innerHTML = ''; // Limpa os itens do modal
+        totalCarrinho.innerHTML = '<strong>Total:</strong> R$ 0,00'; // Reseta o total
+
+        // Fecha o modal
+        carrinhoModal.style.display = 'none';
+    });
+</script>
+
+<script>
+    function atualizarModal() {
+    carrinhoItens.innerHTML = ''; // Limpar lista de itens
+    let total = 0;
+
+    carrinho.forEach((item, index) => {
+        // Criar um elemento <li> para cada item
+        const li = document.createElement('li');
+        li.innerHTML = `
+            ${item.nome} - R$ ${parseFloat(item.preco).toFixed(2)}
+            <button class="btn-remover" data-index="${index}">Remover</button>
+        `;
+        carrinhoItens.appendChild(li);
+
+        // Calcular o total
+        total += parseFloat(item.preco);
+    });
+
+    totalCarrinho.innerHTML = `<strong>Total:</strong> R$ ${total.toFixed(2)}`;
+
+    // Adicionar eventos aos botões de remover
+    const botoesRemover = document.querySelectorAll('.btn-remover');
+    botoesRemover.forEach(botao => {
+        botao.addEventListener('click', (e) => {
+            const index = e.target.getAttribute('data-index');
+            removerDoCarrinho(index);
+        });
+    });
+}
+
+function removerDoCarrinho(index) {
+    carrinho.splice(index, 1); // Remove o item do array pelo índice
+    atualizarCarrinho(); // Atualiza o contador de itens no cabeçalho
+    atualizarModal(); // Atualiza a exibição do modal
+}
+
+</script>

@@ -1,0 +1,721 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #f06e00;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.navbar a:hover {
+    color: #f06e00;
+}
+
+/* Cardápio */
+.item-consumiveis {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.item-consumiveis img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    margin-right: 1rem;
+    object-fit: cover; /* Ajusta a imagem para caber perfeitamente */
+}
+
+.info h3 {
+    color: #f06e00;
+    font-size: 1.2rem;
+}
+
+.info p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+/* Barra estilizada */
+.titulo-barra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Preto */
+    color: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.titulo-barra span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f06e00; /* Laranja rústico */
+}
+/* Estilos do logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px; /* Ajuste conforme necessário */
+    height: auto;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+HEAD
+.item-bebidas img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    margin-right: 1rem;
+    object-fit: cover; /* Ajusta a imagem para caber perfeitamente das bebidas*/
+}
+
+body {
+    background-image: url(img.bebidas/como_armazenar_as_cervejas_para_o_churrasco_2020-01-28.jpg); /* Substitua 'sua-imagem.jpg' pelo nome da imagem da bebida */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-attachment: fixed; 
+    background-position: center; /* Centraliza a imagem */
+    background-color: #000; /* Cor de fundo de fallback */                                                                                                           
+}
+/* Estilo da seção com fundo de imagem e conteúdo em caixa branca */
+.sobre-nos {
+    background-image: url('img/front-view-burgers-stand.jpg'); /* Caminho da imagem */
+    background-size: cover; /* A imagem cobre toda a área */
+    background-position: center; /* Centraliza a imagem */
+    padding: 4rem 2rem; /* Espaçamento interno */
+    margin: 2rem auto; /* Centraliza no layout */
+    border-radius: 12px; /* Bordas arredondadas para a seção */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    position: relative; /* Necessário para o efeito de sobreposição */
+}
+
+/* Caixa branca para o conteúdo */
+.sobre-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semitransparente */
+    padding: 2rem;
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra mais visível */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Texto e botão continuam */
+.sobre-content h2 {
+    color: #f06e00;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.sobre-content p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: #f06e00;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: #d85b00;
+}
+
+
+/* Estilo do botão Carrinho */
+.btn-carrinho {
+    background-color: #f06e00;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-carrinho:hover {
+    background-color: #d85b00;
+}
+
+/* Estilo do botão Comprar */
+.btn-comprar {
+    background-color: #f06e00;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.btn-comprar:hover {
+    background-color: #d85b00;
+}
+/* Estilo do Modal */
+.modal {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semitransparente */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteúdo do Modal */
+.modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão de fechar */
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #f06e00;
+}
+
+/* Lista de itens */
+#carrinho-itens {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+#carrinho-itens li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+
+#total-carrinho {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn-finalizar {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #f06e00;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-finalizar:hover {
+    background-color: #d85b00;
+}
+
+/* Responsividade para telas menores (largura máxima de 768px) */
+@media screen and (max-width: 768px) {
+    /* Ajuste do corpo */
+    body {
+        font-size: 14px; /* Fonte menor para caber melhor em telas pequenas */
+    }
+
+    /* Cabeçalho */
+    .header {
+        flex-direction: column; /* Organiza o cabeçalho em coluna */
+        align-items: flex-start; /* Alinha à esquerda */
+        padding: 1rem 0.5rem;
+    }
+
+    .logo-container {
+        margin-bottom: 1rem;
+    }
+
+    .navbar a {
+        display: block; /* Links ocupam toda a linha */
+        margin: 0.5rem 0; /* Espaçamento entre os links */
+    }
+
+    .btn-carrinho {
+        width: 100%; /* Botão ocupa toda a largura em telas pequenas */
+        margin-top: 1rem;
+    }
+
+    /* Cardápio */
+    .item-lanche {
+        flex-direction: column; /* Empilha o conteúdo verticalmente */
+        align-items: center; /* Centraliza os itens */
+        text-align: center; /* Alinha o texto */
+    }
+
+    .item-lanche img {
+        margin: 0 0 1rem 0; /* Espaçamento inferior */
+        width: 100%; /* Imagens ocupam toda a largura */
+    }
+
+    .info h3 {
+        font-size: 1.2rem; /* Ajusta o tamanho do texto */
+    }
+
+    .btn-comprar {
+        width: 100%; /* Botão ocupa toda a largura */
+        margin-top: 1rem;
+    }
+
+    /* Seção Sobre Nós */
+    .sobre-content {
+        padding: 1.5rem; /* Ajusta o padding para telas menores */
+    }
+
+    /* Modal */
+    .modal-content {
+        width: 90%; /* Reduz o tamanho do modal */
+    }
+}
+
+/* Responsividade para telas bem pequenas (largura máxima de 480px) */
+@media screen and (max-width: 480px) {
+    /* Ajuste geral do texto */
+    body {
+      font-size: 12px; /* Fonte ainda menor para caber em telas muito pequenas */
+    }
+  
+    /* Títulos */
+    h1, h2, h3 {
+      font-size: 1.2rem; /* Ajusta os títulos para evitar que ocupem muito espaço */
+    }
+  
+    /* Modal */
+    .modal-content {
+      padding: 1rem;
+    }
+  }
+
+  /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #f06e00;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.navbar a:hover {
+    color: #f06e00;
+}
+
+/* Cardápio */
+.item-lanche {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.item-lanche img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    margin-right: 1rem;
+    object-fit: cover; /* Ajusta a imagem para caber perfeitamente */
+}
+
+.info h3 {
+    color: #f06e00;
+    font-size: 1.2rem;
+}
+
+.info p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+/* Barra estilizada */
+.titulo-barra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Preto */
+    color: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.titulo-barra span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f06e00; /* Laranja rústico */
+}
+/* Estilos do logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px; /* Ajuste conforme necessário */
+    height: auto;
+    margin-left: 10px;
+}
+
+/* Estilo da seção com fundo de imagem e conteúdo em caixa branca */
+.sobre-nos {
+    background-image: url('img/front-view-burgers-stand.jpg'); /* Caminho da imagem */
+    background-size: cover; /* A imagem cobre toda a área */
+    background-position: center; /* Centraliza a imagem */
+    padding: 4rem 2rem; /* Espaçamento interno */
+    margin: 2rem auto; /* Centraliza no layout */
+    border-radius: 12px; /* Bordas arredondadas para a seção */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    position: relative; /* Necessário para o efeito de sobreposição */
+}
+
+/* Caixa branca para o conteúdo */
+.sobre-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semitransparente */
+    padding: 2rem;
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra mais visível */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Texto e botão continuam */
+.sobre-content h2 {
+    color: #f06e00;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.sobre-content p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: #f06e00;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: #d85b00;
+}
+
+
+/* Estilo do botão Carrinho */
+.btn-carrinho {
+    background-color: #f06e00;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-carrinho:hover {
+    background-color: #d85b00;
+}
+
+/* Estilo do botão Comprar */
+.btn-comprar {
+    background-color: #f06e00;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.btn-comprar:hover {
+    background-color: #d85b00;
+}
+/* Estilo do Modal */
+.modal {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semitransparente */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteúdo do Modal */
+.modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão de fechar */
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #f06e00;
+}
+
+/* Lista de itens */
+#carrinho-itens {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+#carrinho-itens li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+
+#total-carrinho {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn-finalizar {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #f06e00;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-finalizar:hover {
+    background-color: #d85b00;
+}
+
+/* Responsividade para telas menores (largura máxima de 768px) */
+@media screen and (max-width: 768px) {
+    /* Ajuste do corpo */
+    body {
+        font-size: 14px; /* Fonte menor para caber melhor em telas pequenas */
+    }
+
+    /* Cabeçalho */
+    .header {
+        flex-direction: column; /* Organiza o cabeçalho em coluna */
+        align-items: flex-start; /* Alinha à esquerda */
+        padding: 1rem 0.5rem;
+    }
+
+    .logo-container {
+        margin-bottom: 1rem;
+    }
+
+    .navbar a {
+        display: block; /* Links ocupam toda a linha */
+        margin: 0.5rem 0; /* Espaçamento entre os links */
+    }
+
+    .btn-carrinho {
+        width: 100%; /* Botão ocupa toda a largura em telas pequenas */
+        margin-top: 1rem;
+    }
+
+    /* Cardápio */
+    .item-lanche {
+        flex-direction: column; /* Empilha o conteúdo verticalmente */
+        align-items: center; /* Centraliza os itens */
+        text-align: center; /* Alinha o texto */
+    }
+
+    .item-lanche img {
+        margin: 0 0 1rem 0; /* Espaçamento inferior */
+        width: 100%; /* Imagens ocupam toda a largura */
+    }
+
+    .info h3 {
+        font-size: 1.2rem; /* Ajusta o tamanho do texto */
+    }
+
+    .btn-comprar {
+        width: 100%; /* Botão ocupa toda a largura */
+        margin-top: 1rem;
+    }
+
+    /* Seção Sobre Nós */
+    .sobre-content {
+        padding: 1.5rem; /* Ajusta o padding para telas menores */
+    }
+
+    /* Modal */
+    .modal-content {
+        width: 90%; /* Reduz o tamanho do modal */
+    }
+}
+
+/* Responsividade para telas bem pequenas (largura máxima de 480px) */
+@media screen and (max-width: 480px) {
+    /* Ajuste geral do texto */
+    body {
+        font-size: 12px; /* Fonte ainda menor para caber em telas muito pequenas */
+    }
+
+    /* Títulos */
+    h1, h2, h3 {
+        font-size: 1.2rem; /* Ajusta os títulos para evitar que ocupem muito espaço */
+    }
+
+    /* Modal */
+    .modal-content {
+        padding: 1rem;
+    }
+}
+
+.btn-remover {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.btn-remover:hover {
+    background-color: #ff1a1a;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Seleção de Lanches - Pão & Fumaça</title>
+     <link rel="stylesheet" href="style.css">
+     <meta name="description" content="Pão & Fumaça - Melhor hambúrguer artesanal em Londrina. Confira nosso cardápio e faça seu pedido!">
+     <meta name="keywords" content="hambúrguer, artesanal, londrina, cheddar, bacon, picanha, pão & fumaça">
+ </head>
+ <body>
+     <!-- Cabeçalho -->
+     <header class="header">
+         <div class="logo-container">
+             <h1 class="logo">Pão & Fumaça</h1>
+             <img src="img/logo for Pão & Fumaça hamburger restaurant.png" alt="Logo Pão & Fumaça" class="logo-img">
+         </div>
+         <nav class="navbar">
+             <a href="index.html">Cardápio</a>
+             <a href="index-bebidas.html">Bebidas</a>
+             <a href="index-sobre.html">Sobre</a>
+             <button id="carrinho-btn" class="btn-carrinho">Carrinho 🛒 (<span id="carrinho-quantidade">0</span>)</button>
+         </nav>
+     </header>
+ 
+ 
+     <!-- Seção Seleção de Lanches -->
+     <main>
+         <section id="cardapio">
+             <!-- Barra estilizada centralizada com o texto -->
+             <div class="titulo-barra">
+                 <span>Seleção de Bebidas</span>
+             </div>
+ 
+              <!-- Modal do Carrinho -->
+ <div id="carrinho-modal" class="modal">
+     <div class="modal-content">
+         <span class="close-btn">&times;</span>
+         <h2>Itens no Carrinho</h2>
+         <ul id="carrinho-itens">
+             <!-- Itens do carrinho serão adicionados aqui dinamicamente -->
+         </ul>
+         <p id="total-carrinho"><strong>Total:</strong> R$ 0,00</p>
+         <button id="finalizar-compra" class="btn-finalizar">Finalizar Compra</button>
+     </div>
+ </div>
+ 
+             <!-- Item 1 -->
+             <div class="item-consumiveis">
+                 <img src="img.bebidas/25701563.jpg" alt="Cheddar Bacon Deluxe">
+                 <div class="info">
+                     <h3>Coca-Cola</h3>
+                     <p>Coca gelada, 450ml.</p>
+                     <p><strong>Preço:</strong> R$ 7,00</p>
+                     <button class="btn-comprar" data-nome="Coca gelada, 450ml" data-preco="7.00">Comprar</button>
+                 </div>
+             </div>
+             <!-- Item 2 -->
+             <div class="item-consumiveis">
+                 <img src="img.bebidas/22021803241b58bj82jd.jpg" alt="Burger Caipira">
+                 <div class="info">
+                     <h3>Bramah</h3>
+                     <p>Bramah Puro Malte, 500 ml.</p>
+                     <p><strong>Preço:</strong> R$ 26,00</p>
+                     <button class="btn-comprar" data-nome="Bramah Puro Malte, 500 ml" data-preco="26.00">Comprar</button>
+                 </div>
+             </div>
+             <!-- Item 3 -->
+             <div class="item-consumiveis">
+                 <img src="img.bebidas/suco-de-uva-com-hortela-villa-piva-1-litro-2-1000x1000.jpg" alt="Picanha na Brasa">
+                 <div class="info">
+                     <h3>Suco de Uva</h3>
+                     <p>Suco de Uva Hortela Villa Piva, 800 ml.</p>
+                     <p><strong>Preço:</strong> R$ 15,00</p>
+                     <button class="btn-comprar" data-nome="Suco de Uva Hortela Villa Piva, 800 ml" data-preco="15.00">Comprar</button>
+                 </div>
+             </div>
+             <!-- Novo item ajustado -->
+             <div class="item-consumiveis">
+                 <img src="img.bebidas/25a8e528f1fc51c2408bab4bfe09cd36.jpg" alt="Amstel Lager">
+                 <div class="info">
+                     <h3>Amstel Lager</h3>
+                     <p>Cerveja puro malte, 330 ml.</p>
+                     <p><strong>Preço:</strong> R$ 7,00</p>
+                     <button class="btn-comprar" data-nome="Cerveja puro malte, 330 ml" data-preco="7.00">Comprar</button>
+                 </div>
+             </div>
+             <div class="item-consumiveis">
+                 <img src="img.bebidas/refrigerante-guarana-antarctica-garrafa-600ml-2.webp" alt="Picanha na Brasa">
+                 <div class="info">
+                     <h3>Guarana Antartica</h3>
+                     <p>Guarana, 600 ml.</p>
+                     <p><strong>Preço:</strong> R$ 8,00</p>
+                     <button class="btn-comprar" data-nome="Guarana, 600 ml" data-preco="8.00">Comprar</button>
+                 </div>
+         </section>
+     </main>
+ 
+     <!-- Rodapé -->
+     <footer class="footer">
+         <p>© 2025 Pão & Fumaça</p>
+         <p>Email: contato@paoefumaca.com.br | Telefone: (43) 9999-9999</p>
+         <p>Sobre Nós: Paixão pela grelha e sabores defumados. Experiência rústica e acolhedora.</p>
+     </footer>
+ </body>
+ </html>
+ 
+ <script>
+     const carrinho = [];
+     const carrinhoQuantidade = document.getElementById('carrinho-quantidade');
+ 
+     // Função para adicionar itens ao carrinho
+     function adicionarAoCarrinho(nome, preco) {
+         carrinho.push({ nome, preco });
+         atualizarCarrinho();
+     }
+ 
+     // Atualizar a quantidade de itens no carrinho
+     function atualizarCarrinho() {
+         carrinhoQuantidade.textContent = carrinho.length;
+     }
+ 
+     // Adicionar evento aos botões de compra
+     const botoesComprar = document.querySelectorAll('.btn-comprar');
+     botoesComprar.forEach(botao => {
+         botao.addEventListener('click', () => {
+             const nome = botao.getAttribute('data-nome');
+             const preco = botao.getAttribute('data-preco');
+             adicionarAoCarrinho(nome, preco);
+         });
+     });
+ </script>
+ 
+ 
+ <script>
+     const carrinhoModal = document.getElementById('carrinho-modal');
+     const carrinhoBtn = document.getElementById('carrinho-btn');
+     const closeBtn = document.querySelector('.close-btn');
+     const carrinhoItens = document.getElementById('carrinho-itens');
+     const totalCarrinho = document.getElementById('total-carrinho');
+ 
+     // Mostrar o modal do carrinho
+     carrinhoBtn.addEventListener('click', () => {
+         atualizarModal();
+         carrinhoModal.style.display = 'flex';
+     });
+ 
+     // Fechar o modal
+     closeBtn.addEventListener('click', () => {
+         carrinhoModal.style.display = 'none';
+     });
+ 
+     // Fechar o modal ao clicar fora do conteúdo
+     window.addEventListener('click', (event) => {
+         if (event.target === carrinhoModal) {
+             carrinhoModal.style.display = 'none';
+         }
+     });
+ 
+     // Atualizar o modal com os itens do carrinho
+     function atualizarModal() {
+         carrinhoItens.innerHTML = ''; // Limpar lista de itens
+         let total = 0;
+ 
+         carrinho.forEach(item => {
+             const li = document.createElement('li');
+             li.innerHTML = `${item.nome} - R$ ${parseFloat(item.preco).toFixed(2)}`;
+             carrinhoItens.appendChild(li);
+             total += parseFloat(item.preco);
+         });
+ 
+         totalCarrinho.innerHTML = `<strong>Total:</strong> R$ ${total.toFixed(2)}`;
+     }
+ </script>
+ 
+ <script>
+     const finalizarCompraBtn = document.getElementById('finalizar-compra');
+ 
+     // Função para finalizar a compra
+     finalizarCompraBtn.addEventListener('click', () => {
+         if (carrinho.length === 0) {
+             alert("O carrinho está vazio. Adicione itens antes de finalizar a compra!");
+             return;
+         }
+ 
+         // Exibe a mensagem de confirmação
+         alert("Compra realizada com sucesso! Obrigado por escolher a Pão & Fumaça. 🍔✨");
+ 
+         // Limpa o carrinho
+         carrinho.length = 0; // Esvazia o array
+         atualizarCarrinho(); // Atualiza o indicador no cabeçalho
+         carrinhoItens.innerHTML = ''; // Limpa os itens do modal
+         totalCarrinho.innerHTML = '<strong>Total:</strong> R$ 0,00'; // Reseta o total
+ 
+         // Fecha o modal
+         carrinhoModal.style.display = 'none';
+     });
+ </script>
+ 
+ <script>
+     function atualizarModal() {
+     carrinhoItens.innerHTML = ''; // Limpar lista de itens
+     let total = 0;
+ 
+     carrinho.forEach((item, index) => {
+         // Criar um elemento <li> para cada item
+         const li = document.createElement('li');
+         li.innerHTML = `
+             ${item.nome} - R$ ${parseFloat(item.preco).toFixed(2)}
+             <button class="btn-remover" data-index="${index}">Remover</button>
+         `;
+         carrinhoItens.appendChild(li);
+ 
+         // Calcular o total
+         total += parseFloat(item.preco);
+     });
+ 
+     totalCarrinho.innerHTML = `<strong>Total:</strong> R$ ${total.toFixed(2)}`;
+ 
+     // Adicionar eventos aos botões de remover
+     const botoesRemover = document.querySelectorAll('.btn-remover');
+     botoesRemover.forEach(botao => {
+         botao.addEventListener('click', (e) => {
+             const index = e.target.getAttribute('data-index');
+             removerDoCarrinho(index);
+         });
+     });
+ }
+ 
+ function removerDoCarrinho(index) {
+     carrinho.splice(index, 1); // Remove o item do array pelo índice
+     atualizarCarrinho(); // Atualiza o contador de itens no cabeçalho
+     atualizarModal(); // Atualiza a exibição do modal
+ }
+ 
+ </script>
